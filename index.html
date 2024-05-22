@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #typewriter {
+            border-right: 1px solid #000;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3s steps(30, end);
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav
+            class="px-[5%] py-[10px] border border-gray-900 rounded-lg mx-[5%] my-[3%] flex items-center flex-wrap justify-between text-[18px]">
+            <div class="logo">
+                <a href="#Home">
+                    <h1 class="text-[2rem] cursor-pointer"><i class="fa-solid fa-chevron-left  text-[#ff004f]"></i><span
+                            class="text-[#ff004f]">B</span>lessing<span class="text-[#ff004f]">/</span><i
+                            class="fa-solid fa-chevron-right text-[#ff004f]"></i></h1>
+                </a>
+            </div>
+            <div class="relative">
+                <ul class="flex flex-wrap gap-[2rem] z-10 relative">
+                    <li><a href="#" class="duration-500 relative" id="Home">Home</a></li>
+                    <li><a href="#About" class="duration-500 relative">About</a></li>
+                    <li><a href="#Skills" class="duration-500 relative">Skills</a></li>
+                    <li><a href="#Services" class="duration-500 relative">Services</a></li>
+                    <li><a href="#Experience" class="duration-500 relative">Experience</a></li>
+                </ul>
+            </div>
+            <button class="bg-[#ff004f] py-[12px] px-[50px] rounded-[16px] block w-[fit-content]  z-10 relative"><a
+                    href="#">Contact Me</a></button>
+        </nav>
+    </header>
+    <section id="Home">
+        <div class="container mt-[17%] text-[20px] lg:px-[7%]  flex justify-between w-[100%] h-[100vh]">
+            <div class="lg:pt-[5%]" id="typewriter">
+                <h1 class="auto-type lg:text-[50px] font-[500] pb-[1rem]">Hi, I'm<br>Ogunyemi Blessing,</h1>
+                <p class="auto-type lg:text-[27px]">A Passionate <i
+                        class="fa-solid fa-chevron-left  text-[#ff004f]"></i><span class="text-[#ff004f]">Frontend Web
+                        Developer</span> <span class="text-[#ff004f]">/</span><i
+                        class="fa-solid fa-chevron-right text-[#ff004f] leading-loose"></i> with <br>the zeal to create
+                    user friendly
+                    websites.</p>
+                <button class="bg-[#ff004f] py-[12px] px-[50px] rounded-[16px] block w-[fit-content]  z-10 mt-[2rem]"><a
+                        href="tel:+2348189536174"><i class="fa-solid fa-phone pr-2"></i> Book a Call</a></button>
+            </div>
+            <div>
+                <img src="img/mine.jpg" class="hero-image rounded-[50%] shadow" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="About">
+        <div class=" about px-[10%] py-[5%]">
+            <div class="row flex flex-wrap justify-between">
+                <div class="about-col-1 relative">
+                    <img src="img/mine.jpg" class="w-[100%] h-[80vh] rounded-[15px] shadow relative" alt="">
+                    <div class="bg-[#ff004f] p-[3rem] items-center text-center layer">
+                        <p class="text-[1.2rem] ">Ogunyemi Blessing</p>
+                        <div class="flex gap-2">
+                            <div class="bg-white h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
+                                <a href="https://www.instagram.com/i_am_kiishi"><i
+                                        class="fa-brands fa-instagram text-black"></i></a>
+                            </div>
+                            <div class="bg-white h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
+                                <a href="https://www.twitter.com/i_am_kiishi"><i
+                                        class="fa-brands fa-twitter  text-black"></i></a>
+                            </div>
+                            <div class="bg-white h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
+                                <a href=""><i class="fa-brands fa-telegram  text-black"></i></a>
+                            </div>
+                            <div class="bg-white h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
+                                <a href="https://www.github.com/blessingmichaels"> <i
+                                        class="fa-brands fa-github text-black"></i></a>
+                            </div>
+                            <div class="bg-white h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
+                                <a href="https://www.facebook.com/Blessing Michaels"> <i
+                                        class="fa-brands fa-facebook text-black"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="auto-type lg:text-[60px] font-[600] pb-[1rem]">About Me</h1>
+                    <h1 class="lg:text-[35px] text-[#ff004f] leading-relax">Transforming visions into <br> exceptional
+                        Websites</h1>
+                    <p class="text-[15px] text-gray-100 pt-[2rem] leading-loose">I'm a frontend web developer dedicated
+                        to crafting user-friendly interfaces. With
+                        expertise in <span class="text-[#b54769]">HTML,</span> <span class="text-[#b54769]">CSS,</span>
+                        <span class="text-[#b54769]">JavaScript,</span> and various frontend frameworks, such as
+                        <span class="text-[#b54769]">tailwindcss</span> and <span class="text-[#b54769]">React.</span> I
+                        specialize in creating sleek, responsive
+                        websites that
+                        captivate and engage users. Whether it's designing
+                        interactive elements, optimizing performance, or staying updated on the latest web technologies,
+                        my commitment remains unwavering in delivering exceptional solutions that exceed expectations.
+                        Outside of my tech work, I find peace in exploring the wonders of nature, often taking
+                        picturesque hikes and capturing stunning landscapes with my camera. Let's collaborate and create
+                        something truly remarkable together!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Skills">
+        <div class="px-[10%] py-[10%] items-center text-center justify-center">
+            <h1 class="auto-type lg:text-[60px] font-[600] pb-[1rem]">Skills</h1>
+            <p class="leading-relax text-[40px] text-[#ff004f]">My proficiency extends to the following <br> skills,
+                tools,
+                and technologies: </p>
+            <div class=" skill-icons flex pt-[5rem] justify-between items-center justify-center">
+                <div>
+                    <i class="fa-brands fa-js text-[7rem] text-yellow-500"></i>
+                    <p class="text-lg">JavaScript</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react text-[7rem] text-blue-500"></i>
+                    <p class="text-lg">React</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-bootstrap text-[7rem] text-purple-500 "></i>
+                    <p class="text-lg">Bootstrap</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-merge text-[7rem] text-black bg-orange-700 "></i>
+                    <p class="text-lg">GIT</p>
+                </div>
+                <div>
+                    <img src="img/tailwind-svgrepo-com.svg" class="w-[8rem] h-auto" alt="">
+                    <p class="text-lg">Tailwindcss</p>
+                </div>
+            </div>
+            <!-- <p class="leading-loose text-[40px] text-[#ff004f]">The skills, tools and technologies <br> I am really good
+                at: </p> -->
+        </div>
+    </section>
+    <section id="Services">
+        <div class="px-[10%] py-[10%] items-center text-center">
+            <h1 class="auto-type lg:text-[60px] font-[600] pb-[1rem]">My Work</h1>
+            <p class="leading-relax text-[40px] text-[#ff004f]">Projects I have worked on thus far demonstrating my
+                developer skills and capabilities.</p>
+            <div class="work-list">
+                <div class="work border-2 border-black shadow w-[100%] h-auto pb-5">
+                    <img src="img/ipsum.png" alt="image-one">
+                    <div>
+                        <h2 class="text-base leading-loose pt-3 pb-2">Logoipsum</h2>
+                        <p class="leading-loose text-[10px] pb-2 text-gray-400">This is a landing webpage built with
+                            HTML and CSS</p>
+                        <div class="flex gap-[1rem] items-center px-5 justify-center">
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">HTML</a></button>
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">CSS</a></button>
+                        </div>
+                        <div class="flex justify-center pt-3 justify-between">
+                            <a href="https://logoipsum-delta.vercel.app/"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i class="fa-solid fa-link"></i>
+                                Live Preview</a>
+                            <a href="https://github.com/blessingmichaels/logoipsum"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i class="fa-brands fa-github"></i>
+                                View Code</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="work border-2 border-black shadow w-[100%] h-auto pb-5">
+                    <img src="img/Adire.png" alt="image-one">
+                    <div>
+                        <h2 class="text-base leading-loose pt-3 pb-2">AdireMedley</h2>
+                        <p class="leading-loose text-[10px] pb-2 text-gray-400">This is a landing webpage built with
+                            HTML, Tailwind and Js</p>
+                        <div class="flex gap-[1rem] items-center px-5 justify-center">
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">HTML</a></button>
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">CSS</a></button>
+                                    <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">Js</a></button>
+                        </div>
+                        <div class="flex justify-center pt-3 justify-between">
+                            <a href="https://adire-five.vercel.app/"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i class="fa-solid fa-link"></i>
+                                Live Preview</a>
+                            <a href="https://github.com/blessingmichaels/Adire"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i class="fa-brands fa-github"></i>
+                                View Code</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="work border-2 border-black shadow w-[100%] h-auto pb-5">
+                    <img src="img/soso.png" alt="image-one">
+                    <div>
+                        <h2 class="text-base leading-loose pt-3 pb-2">SoSo</h2>
+                        <p class="leading-loose text-[10px] pb-2 text-gray-400">This is a landing webpage built with
+                            HTML and CSS</p>
+                        <div class="flex gap-[1rem] items-center px-5 justify-center">
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">HTML</a></button>
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">CSS</a></button>
+                        </div>
+                        <div class="flex justify-center pt-3 justify-between">
+                            <a href="https://soso-hazel.vercel.app/"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i class="fa-solid fa-link"></i>
+                                Live Preview</a>
+                            <a href="https://github.com/blessingmichaels/soso"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i class="fa-brands fa-github"></i>
+                                View Code</a>
+
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+        integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        const text = "Welcome to the typewriter effect.";
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("typewriter").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100); // Adjust the speed here
+            }
+        }
+
+        typeWriter();
+    </script> -->
+</body>
+
+</html>
