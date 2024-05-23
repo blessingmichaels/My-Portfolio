@@ -10,17 +10,12 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
+
 }
 
-/* .Header {
-    margin: 0;
-    background: url('img/mine.jpg');
-    width: 100%;
-    height: 100vh;
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
-} */
+html {
+    scroll-behavior: smooth;
+}
 
 nav ul li a::after {
     content: '';
@@ -32,6 +27,7 @@ nav ul li a::after {
     bottom: -6px;
     transition: 0.5s;
 }
+
 nav ul li a:hover::after {
     width: 100%;
 
@@ -93,10 +89,12 @@ nav ul li a:hover::after {
     grid-gap: 40px;
     margin-top: 50px;
 }
+
 .work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .work img {
@@ -105,4 +103,48 @@ nav ul li a:hover::after {
     border-top-right-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+.social-icons a {
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.conttainer {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.glassmorphism {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
 }
