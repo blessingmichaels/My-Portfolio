@@ -36,84 +36,118 @@
             class="px-[5%] py-[10px] border border-gray-900 rounded-lg mx-[5%] my-[3%] flex items-center flex-wrap justify-between text-[18px]">
             <div class="logo">
                 <a href="#Home">
-                    <h1 class="text-[2rem] cursor-pointer"><i class="fa-solid fa-chevron-left  text-[#ff004f]"></i><span
+                    <h1 class="lg:text-[2rem] max-sm:text-[1rem] cursor-pointer"><i
+                            class="fa-solid fa-chevron-left  text-[#ff004f]"></i><span
                             class="text-[#ff004f]">B</span>lessing<span class="text-[#ff004f]">/</span><i
                             class="fa-solid fa-chevron-right text-[#ff004f]"></i></h1>
                 </a>
             </div>
-            <div class="relative">
-                <ul class="flex flex-wrap gap-[2rem] z-10 relative">
+            <div
+                class="relative ">
+                <ul class="flex flex-wrap md:flex-row gap-[2rem] z-10 relative max-sm:flex-col max-sm:flex-col">
                     <li><a href="#" class="duration-500 relative" id="Home">Home</a></li>
                     <li><a href="#About" class="duration-500 relative">About</a></li>
                     <li><a href="#Skills" class="duration-500 relative">Skills</a></li>
                     <li><a href="#Services" class="duration-500 relative">Services</a></li>
                     <li><a href="#Experience" class="duration-500 relative">Experience</a></li>
+                    <i class="fas fa-times lg:hidden text-[25px]" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars lg:hidden text-[25px]" onclick="openmenu()"></i>
             </div>
             <button class="bg-[#ff004f] py-[12px] px-[50px] rounded-[16px] block w-[fit-content]  z-10 relative"><a
                     href="#Contact">Contact Me</a></button>
         </nav>
     </header>
+
+
+
     <section id="Home">
-        <div class="container mt-[17%] text-[20px] lg:px-[7%]  flex justify-between w-[100%] h-[100vh]">
-            <div class="lg:pt-[5%]" id="typewriter">
-                <h1 class="auto-type lg:text-[50px] font-[500] pb-[1rem]">Hi, I'm<br>Ogunyemi Blessing,</h1>
-                <p class="auto-type lg:text-[27px]">A Passionate <i
-                        class="fa-solid fa-chevron-left  text-[#ff004f]"></i><span class="text-[#ff004f]">Frontend Web
-                        Developer</span> <span class="text-[#ff004f]">/</span><i
-                        class="fa-solid fa-chevron-right text-[#ff004f] leading-loose"></i> with <br>the zeal to create
-                    user friendly
-                    websites.</p>
-                <button
-                    class="bg-[#ff004f] py-[12px] px-[50px] rounded-[16px] block w-[fit-content]  z-10 mt-[2rem] hover:text-black"><a
-                        href="tel:+2348189536174"><i class="fa-solid fa-phone pr-2"></i> Book a Call</a></button>
+        <div
+            class="my-[15%] text-[20px] px-[7%] flex flex-col lg:flex-row justify-between w-full h-full md:px-[10%] items-center">
+            <div class="home-div lg:pt-[5%] lg:flex-shrink-0" style="flex-basis: 60%;">
+                <div>
+                    <h1 class="h-one lg:text-[50px] max-sm:text-[25px]  md:text-[60px] font-[500] pb-[1rem]">Hi, <span
+                            class="text-[#b54769] md:hidden ">&#9995;</span> I'm<br>Ogunyemi
+                        Blessing, <span class="md:hidden">&#128521;</span></h1>
+                    <p
+                        class="auto-type lg:text-[27px] max-sm:text-[13px] max-sm:leading-loose md:text-[25px] md:leading-relax">
+                        A Passionate <i class="fa-solid fa-chevron-left text-[#ff004f]"></i><span
+                            class="text-[#ff004f]">Frontend
+                            Web Developer</span> <span class="text-[#ff004f]">/</span><i
+                            class="fa-solid fa-chevron-right text-[#ff004f] leading-loose"></i> with <br>the zeal to
+                        create user friendly websites.</p>
+                    <button
+                        class="bg-[#ff004f] py-[12px] lg:px-[50px] md:px-[50px] rounded-[16px] block w-[fit-content] z-10 mt-[2rem] hover:text-black max-sm:px-[30px]"><a
+                            href="tel:+2348189536174"><i class="fa-solid fa-phone pr-2"></i> Book a Call</a></button>
+                </div>
             </div>
-            <div>
-                <img src="img/mine.jpg" class="hero-image rounded-[50%] shadow" alt="">
+            <div class="home-img lg:flex-shrink-0 md:mt-[5rem]" style="flex-basis: 33%;">
+                <img src="img/mine.jpg" class="hero-image lg:rounded-[50%] md:rounded-[20px] md:h-auto shadow" alt="">
+                <img src="img/frontend.png" class="hero-image2 rounded-lg shadow" alt="">
             </div>
         </div>
     </section>
 
+
     <section id="About">
         <div class=" about px-[10%] py-[5%]">
-            <div class="row flex flex-wrap justify-between">
+            <div class="row flex flex-wrap justify-between about-reverse items-center">
                 <div class="about-col-1 relative">
-                    <img src="img/mine.jpg" class="w-[100%] h-[80vh] rounded-[15px] shadow relative" alt="">
+                    <img src="img/mine.jpg"
+                        class=" hero-image w-[100%] lg:h-auto md:h-auto rounded-[15px] shadow relative md:mt-[4rem]"
+                        alt="">
+                    <img src="img//about.png"
+                        class="hero-image2 w-[100%] h-auto rounded-[15px] shadow relative max-sm:mt-[3rem]" alt="">
                     <div class="bg-[#ff004f] p-[3rem] items-center text-center layer">
                         <p class="text-[1.2rem] ">Ogunyemi Blessing</p>
                         <div class="flex gap-2">
                             <div
                                 class=" h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center bg-[black] hover:bg-[white]">
-                                <a href="https://www.instagram.com/i_am_kiishi"><i
-                                        class="fa-brands fa-instagram text-[#ff004f] hover:text-black"></i></a>
+                                <a href="https://www.instagram.com/i_am_kiishi" target="_blank" class="tooltip"><i
+                                        class="fa-brands fa-instagram text-[#ff004f] hover:text-black"></i>
+                                    <span class="tooltiptext tooltiptext-two">Instagram</span>
+                                </a>
                             </div>
                             <div
                                 class=" bg-[black] hover:bg-[white] h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
-                                <a href="https://www.twitter.com/i_am_kiishi"><i
-                                        class="fa-brands fa-twitter  text-[#ff004f] hover:text-black"></i></a>
+                                <a href="https://www.twitter.com/i_am_kiishi" target="_blank" class="tooltip"><i
+                                        class="fa-brands fa-twitter  text-[#ff004f] hover:text-black"></i>
+                                    <span class="tooltiptext tooltiptext-two">Twitter</span>
+                                </a>
                             </div>
                             <div
                                 class=" bg-[black] hover:bg-[white] h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
-                                <a href=""><i class="fa-brands fa-telegram  text-[#ff004f] hover:text-black"></i></a>
+                                <a href="" class="tooltip"><i
+                                        class="fa-brands fa-telegram  text-[#ff004f] hover:text-black"></i>
+                                    <span class="tooltiptext tooltiptext-two">Telegram</span>
+                                </a>
                             </div>
                             <div
                                 class=" bg-[black] hover:bg-[white] h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
-                                <a href="https://www.github.com/blessingmichaels"> <i
-                                        class="fa-brands fa-github text-[#ff004f] hover:text-black"></i></a>
+                                <a href="https://www.github.com/blessingmichaels" target="_blank" class="tooltip"> <i
+                                        class="fa-brands fa-github text-[#ff004f] hover:text-black"></i>
+                                    <span class="tooltiptext tooltiptext-two">Github</span>
+                                </a>
                             </div>
                             <div
                                 class=" bg-[black] hover:bg-[white] h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
-                                <a href="https://www.facebook.com/Blessing Michaels"> <i
-                                        class="fa-brands fa-facebook text-[#ff004f] hover:text-black"></i></a>
+                                <a href="https://www.facebook.com/Blessing Michaels" target="_blank" class="tooltip"> <i
+                                        class="fa-brands fa-facebook text-[#ff004f] hover:text-black"></i>
+                                    <span class="tooltiptext tooltiptext-two">Facaebook</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="auto-type lg:text-[60px] font-[600] pb-[1rem]">About Me</h1>
-                    <h1 class="lg:text-[35px] text-[#ff004f] leading-relax">Transforming visions into <br> exceptional
+                <div class="about-col-2 max-sm:items-center">
+                    <h1 class="auto-type lg:text-[60px] font-[600] pb-[1rem] max-sm:text-[40px] md:text-[50px]">About Me
+                    </h1>
+                    <h1 class="lg:text-[25px] text-[#ff004f] leading-relax max-sm:text-[20px] md:text-[30px]">
+                        Transforming visions into
+                        exceptional
                         Websites</h1>
-                    <p class="text-[15px] text-gray-100 pt-[2rem] leading-loose">I'm a frontend web developer dedicated
+                    <p class="text-[15px] lg:text-[17px] text-gray-100 pt-[2rem] leading-loose md:text-[20px]">I'm a
+                        frontend web developer dedicated
                         to crafting user-friendly interfaces. With
                         expertise in <span class="text-[#b54769]">HTML,</span> <span class="text-[#b54769]">CSS,</span>
                         <span class="text-[#b54769]">JavaScript,</span> and various frontend frameworks, such as
@@ -132,31 +166,36 @@
         </div>
     </section>
     <section id="Skills">
-        <div class="px-[10%] py-[10%] items-center text-left justify-center">
-            <h1 class="auto-type lg:text-[60px] font-[600] pb-[1rem]">Skills</h1>
-            <p class="leading-loose text-[30px] text-[#ff004f]">My proficiency extends to the following skills,
+        <div class="px-[10%] py-[10%] items-center text-left justify-center" style="flex-basis: 60%;">
+            <h1 class="auto-type lg:text-[60px] font-[600] pb-[1rem]  max-sm:text-[40px] md:text-[50px]">Skills</h1>
+            <p class="leading-loose lg:text-[30px] text-[#ff004f]  max-sm:text-[20px] md:text-[30px]">My proficiency
+                extends to the
+                following skills,
                 tools,
                 and technologies: </p>
-            <div class=" skill-icons flex pt-[5rem] justify-between items-center justify-center">
+            <div class=" skill-icons flex pt-[5rem] justify-between items-center justify-center"
+                style="flex-basis: 40%;">
                 <div>
-                    <i class="fa-brands fa-js text-[7rem] text-yellow-500"></i>
-                    <p class="text-lg">JavaScript</p>
+                    <i class="fa-brands fa-js lg:text-[7rem] text-yellow-500 max-sm:text-[2rem] md:text-[5rem] "></i>
+                    <p class="text-lg max-sm:text-[10px]">JavaScript</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <i class="fa-brands fa-react text-[7rem] text-blue-500"></i>
-                    <p class="text-lg">React</p>
+                    <i class="fa-brands fa-react text-[7rem] text-blue-500 max-sm:text-[2rem] md:text-[5rem]"></i>
+                    <p class="text-lg max-sm:text-[10px]">React</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <i class="fa-brands fa-bootstrap text-[7rem] text-purple-500 "></i>
-                    <p class="text-lg">Bootstrap</p>
+                    <i
+                        class="fa-brands fa-bootstrap text-[7rem] text-purple-500 max-sm:text-[2rem] md:text-[5rem] "></i>
+                    <p class="text-lg max-sm:text-[10px]">Bootstrap</p>
                 </div>
                 <div>
-                    <i class="fa-solid fa-code-merge text-[7rem] text-orange-700 "></i>
-                    <p class="text-lg">GIT</p>
+                    <i class="fa-solid fa-code-merge text-[7rem] text-orange-700 max-sm:text-[2rem] md:text-[5rem]"></i>
+                    <p class="text-lg max-sm:text-[10px]">GIT</p>
                 </div>
                 <div>
-                    <img src="img/tailwind-svgrepo-com.svg" class="w-[8rem] h-auto" alt="">
-                    <p class="text-lg">Tailwindcss</p>
+                    <img src="img/tailwind-svgrepo-com.svg" class="lg:w-[8rem] h-auto max-sm:w-[2rem] md:w-[5rem]"
+                        alt="">
+                    <p class="text-lg max-sm:text-[10px]">Tailwindcss</p>
                 </div>
             </div>
             <!-- <p class="leading-loose text-[40px] text-[#ff004f]">The skills, tools and technologies <br> I am really good
@@ -165,8 +204,12 @@
     </section>
     <section id="Services">
         <div class="px-[10%] py-[10%] items-center text-center">
-            <h1 class="auto-type lg:text-[60px] font-[600] pb-[1rem] drop-shadow text-left">My Work</h1>
-            <p class="leading-relax text-[20px] text-[#ff004f] text-left">Projects I have worked on thus far
+            <h1
+                class="auto-type lg:text-[60px] font-[600] pb-[1rem] drop-shadow text-left max-sm:text-[40px] md:text-[50px]">
+                My Work
+            </h1>
+            <p class="leading-relax lg:text-[20px]  text-[20px]  text-[#ff004f] text-left md:text-[25px]">Projects I
+                have worked on thus far
                 demonstrating my
                 developer skills and capabilities.</p>
             <div class="work-list">
@@ -185,10 +228,10 @@
                                     href="">CSS</a></button>
                         </div>
                         <div class="flex justify-center pt-3 justify-between">
-                            <a href="https://logoipsum-delta.vercel.app/"
+                            <a href="https://logoipsum-delta.vercel.app/" target="_blank"
                                 class="text-[10px] px-[2rem] underline text-gray-400"><i class="fa-solid fa-link"></i>
                                 Live Preview</a>
-                            <a href="https://github.com/blessingmichaels/logoipsum"
+                            <a href="https://github.com/blessingmichaels/logoipsum" target="_blank"
                                 class="text-[10px] px-[2rem] underline text-gray-400"><i
                                     class="fa-brands fa-github"></i>
                                 View Code</a>
@@ -214,10 +257,10 @@
                                     href="">Js</a></button>
                         </div>
                         <div class="flex justify-center pt-3 justify-between">
-                            <a href="https://adire-five.vercel.app/"
+                            <a href="https://adire-five.vercel.app/" target="_blank"
                                 class="text-[10px] px-[2rem] underline text-gray-400"><i class="fa-solid fa-link"></i>
                                 Live Preview</a>
-                            <a href="https://github.com/blessingmichaels/Adire"
+                            <a href="https://github.com/blessingmichaels/Adire" target="_blank"
                                 class="text-[10px] px-[2rem] underline text-gray-400"><i
                                     class="fa-brands fa-github"></i>
                                 View Code</a>
@@ -240,10 +283,91 @@
                                     href="">CSS</a></button>
                         </div>
                         <div class="flex justify-center pt-3 justify-between">
-                            <a href="https://soso-hazel.vercel.app/"
+                            <a href="https://soso-hazel.vercel.app/" target="_blank"
                                 class="text-[10px] px-[2rem] underline text-gray-400"><i class="fa-solid fa-link"></i>
                                 Live Preview</a>
-                            <a href="https://github.com/blessingmichaels/soso"
+                            <a href="https://github.com/blessingmichaels/soso" target="_blank"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i
+                                    class="fa-brands fa-github"></i>
+                                View Code</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="work border-2 border-black shadow w-[100%] h-auto pb-5">
+                    <img src="img/netflix.png" alt="image-one">
+                    <div>
+                        <h2 class="text-base leading-loose pt-3 pb-2 drop-shadow">Netflix</h2>
+                        <p class="leading-loose text-[10px] pb-2 text-gray-400">This is a landing webpage built with
+                            HTML and CSS</p>
+                        <div class="flex gap-[1rem] items-center px-5 justify-center">
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">HTML</a></button>
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">CSS</a></button>
+                        </div>
+                        <div class="flex justify-center pt-3 justify-between">
+                            <a href="https://netflix-sandy-iota.vercel.app/" target="_blank"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i class="fa-solid fa-link"></i>
+                                Live Preview</a>
+                            <a href="https://github.com/blessingmichaels/netflix" target="_blank"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i
+                                    class="fa-brands fa-github"></i>
+                                View Code</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="work border-2 border-black shadow w-[100%] h-auto pb-5">
+                    <img src="img/urano sketch.png" alt="image-one">
+                    <div>
+                        <h2 class="text-base leading-loose pt-3 pb-2 drop-shadow">Urano Sketch</h2>
+                        <p class="leading-loose text-[10px] pb-2 text-gray-400">This is a landing webpage built with
+                            HTML and CSS</p>
+                        <div class="flex gap-[1rem] items-center px-5 justify-center">
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">HTML</a></button>
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">CSS</a></button>
+                        </div>
+                        <div class="flex justify-center pt-3 justify-between">
+                            <a href="https://urano-sketch.vercel.app/" target="_blank"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i class="fa-solid fa-link"></i>
+                                Live Preview</a>
+                            <a href="https://github.com/blessingmichaels/urano-sketch" target="_blank"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i
+                                    class="fa-brands fa-github"></i>
+                                View Code</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="work border-2 border-black shadow w-[100%] h-auto pb-5">
+                    <img src="img/calculator-two.png" alt="image-one">
+                    <div>
+                        <h2 class="text-base leading-loose pt-3 pb-2 drop-shadow">Calculator</h2>
+                        <p class="leading-loose text-[10px] pb-2 text-gray-400">A calculator built with
+                            HTML, CSS and JavaScript</p>
+                        <div class="flex gap-[1rem] items-center px-5 justify-center">
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">HTML</a></button>
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">CSS</a></button>
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">JavaScript</a></button>
+                        </div>
+                        <div class="flex justify-center pt-3 justify-between">
+                            <a href="https://calculator-two-five.vercel.app/" target="_blank"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i class="fa-solid fa-link"></i>
+                                Live Preview</a>
+                            <a href="https://github.com/blessingmichaels/CalculatorTwo" target="_blank"
                                 class="text-[10px] px-[2rem] underline text-gray-400"><i
                                     class="fa-brands fa-github"></i>
                                 View Code</a>
@@ -260,29 +384,35 @@
     </section>
     <section id="Experience">
         <div class=" about px-[10%] py-[10%]">
-            <div>
-                <h1 class="auto-type lg:text-[60px] font-[600] pb-[1rem] drop-shadow">Experience</h1>
-                <p class="leading-relax text-[30px] text-[#ff004f]">Here is a quick summary of my most recent
+            <div style="flex-basis: 60%;">
+                <h1 class="auto-type lg:text-[60px] font-[600] pb-[1rem] drop-shadow max-sm:text-[40px] md:text-[50px]">
+                    Experience</h1>
+                <p class="leading-relax text-[30px] text-[#ff004f] max-sm:text-[25px] md:text-[30px]">Here is a quick
+                    summary of my
+                    most recent
                     experiences
                 </p>
             </div>
-            <div class="conttainer mt-[5%]">
-                <div class="glassmorphism w-[100%] leading-loose cursor-pointer px-[2rem] text-[20px]">
-                    <div class="flex justify-between py-[1rem]">
-                        <p  class="text-[#b54769]">Frontend Web Development Trainee at CodeVerse Tech Hub</p>
-                        <p class="text-[#b54769]">2024 - Current</p>
+            <div class="conttainer mt-[5%]" style="flex-basis: 40%;">
+                <div
+                    class="glassmorphism w-[100%] leading-loose cursor-pointer px-[2rem] text-[20px] max-sm:px-[1rem] md:px-[2rem]">
+                    <div class="flex justify-between py-[1rem] ">
+                        <p class="text-[#b54769] max-sm:text-[10px] max-sm:leading-relax ">Frontend Web Development
+                            Trainee at CodeVerse Tech Hub</p>
+                        <p class="text-[#b54769] max-sm:text-[8px] max-sm:text-white md:text-white"> 2024 <span
+                                class=" max-sm:hidden">- Current</span></p>
                     </div>
                     <div class="flex justify-between  py-[1rem]">
-                        <p  class="text-[#b54769]">Internship at CodeVerse Tech Hub</p>
-                        <p class="text-[#b54769]">2024 - Current</p>
+                        <p class="text-[#b54769] max-sm:text-[10px]">Internship at CodeVerse Tech Hub</p>
+                        <p class="text-[#b54769] max-sm:text-[10px] max-sm:text-white md:text-white">2024 - Current</p>
                     </div>
                     <div class="flex justify-between  py-[1rem]">
-                        <p  class="text-[#b54769]">Internship at Best Service Raya</p>
-                        <p class="text-[#b54769]">2015 - 2017</p>
+                        <p class="text-[#b54769] max-sm:text-[10px]">Internship at Best Service Raya</p>
+                        <p class="text-[#b54769] max-sm:text-[10px] max-sm:text-white md:text-white">2015 - 2017</p>
                     </div>
                     <div class="flex justify-between  py-[1rem]">
-                        <p  class="text-[#b54769]">Computer Trainee at Halal Institute</p>
-                        <p class="text-[#b54769]">2014 - 2015</p>
+                        <p class="text-[#b54769] max-sm:text-[10px]">Computer Trainee at Halal Institute</p>
+                        <p class="text-[#b54769] max-sm:text-[10px] max-sm:text-white md:text-white">2014 - 2015</p>
                     </div>
                 </div>
             </div>
@@ -296,21 +426,38 @@
         <div class=" about px-[10%] py-[10%]">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title auto-type lg:text-[60px] font-[600] pb-[1rem] drop-shadow">Contact Me</h1>
-                    <p class="mt-[30px] text-[16px]"><i
-                            class="fas fa-paper-plane text-[#ff004f] mr-[15px] text-[25px]"></i>blessingmichaels17@gmail.com
+                    <h1 class="sub-title auto-type lg:text-[60px] font-[600] pb-[1rem] drop-shadow md:text-[50px]">
+                        Contact Me</h1>
+                    <p class="mt-[30px] lg:text-[16px] max-sm:text-[14px] md:text-[25px]"><i
+                            class="fas fa-paper-plane text-[#ff004f] mr-[15px] lg:text-[25px] max-sm:text-[14px]"></i>blessingmichaels17@gmail.com
                     </p>
-                    <p class="mt-[30px]"><i
-                            class="fas fa-phone-square text-[#ff004f] mr-[15px] text-[25px]"></i>09154497611</p>
+                    <p class="mt-[30px] md:text-[30px] lg:text-base max-sm:text-[15px]"><i
+                            class="fas fa-phone-square text-[#ff004f] mr-[15px] text-[25px] "></i>09154497611</p>
                     <div class="social-icons mt-[30px]">
-                        <a href="https://facebook.com" class="text-[30px] inline-block mr-[15px]"><i
-                                class="fab fa-facebook text-[#ababab] hover:text-[#ff004f]"></i></a>
-                        <a href="" class="text-[30px] inline-block  mr-[15px] hover:text-[#ff004f]"><i
-                                class="fab fa-twitter-square text-[#ababab] hover:text-[#ff004f]"></i></a>
-                        <a href="" class="text-[30px] inline-block  mr-[15px]"><i
-                                class="fab fa-instagram text-[#ababab] hover:text-[#ff004f]"></i></a>
-                        <a href="" class="text-[30px] inline-block  mr-[15px]"><i
-                                class="fab fa-linkedin text-[#ababab] hover:text-[#ff004f]"></i></a>
+                        <a href="https://www.github.com/blessingmichaels" target="_blank"
+                            class="text-[30px] inline-block mr-[15px] tooltip"><i
+                                class="fa-brands fa-github text-[#ababab] hover:text-[#ff004f]"></i>
+                            <span class="tooltiptext">Github</span>
+                        </a>
+                        <a href="https://facebook.com" target="_blank"
+                            class="text-[30px] inline-block mr-[15px] tooltip"><i
+                                class="fab fa-facebook text-[#ababab] hover:text-[#ff004f]"></i>
+                            <span class="tooltiptext">Facebook</span>
+                        </a>
+                        <a href="" target="_blank"
+                            class="text-[30px] inline-block  mr-[15px] hover:text-[#ff004f] tooltip"><i
+                                class="fab fa-twitter-square text-[#ababab] hover:text-[#ff004f]"></i>
+                            <span class="tooltiptext">Twitter</span>
+                        </a>
+                        <a href="" target="_blank" class="text-[30px] inline-block  mr-[15px] tooltip"><i
+                                class="fab fa-instagram text-[#ababab] hover:text-[#ff004f]"></i>
+                            <span class="tooltiptext">Instagram</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/BLESSING-OGUNYEMI-aa2851249  " target="_blank"
+                            class="text-[30px] inline-block  mr-[15px] tooltip"><i
+                                class="fab fa-linkedin text-[#ababab] hover:text-[#ff004f]"></i>
+                            <span class="tooltiptext">Linkedin</span>
+                        </a>
                     </div>
                     <a href="img/OGUNYEMI BLESSING RESUME.docx" download
                         class="btn btn2 bg-[#ff004f] inline-block py-[14px] px-[50px] rounded-[6px] w-[fit-content] shadow mt-[30px]">Download
@@ -331,14 +478,11 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="copy-right">
-            <p>Copyright Blessing. Made with<i class="fas fa-heart"></i> by Easy Tutorials</p>
-        </div> -->
     </section>
 
     <section id="Footer">
-        <div class="px-[7%] pt-[5%] pb-[2%] mt-[10%]">
-            <div class="pt-[2%] border-t-2 border-gray-900 flex justify-between items-center text-[18px]">
+        <div class="footer px-[7%] pt-[5%] pb-[2%] mt-[10%]">
+            <div class=" pt-[2%] border-t-2 border-gray-900 flex justify-between items-center text-[18px]">
                 <div>
                     <a href="#header">
                         <h1 class="text-[2rem] cursor-pointer"><i
@@ -354,31 +498,52 @@
                     <div class="flex gap-2">
                         <div
                             class=" h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center bg-[black] hover:bg-[white]">
-                            <a href="https://www.instagram.com/i_am_kiishi"><i
-                                    class="fa-brands fa-instagram text-[#ff004f] hover:text-black"></i></a>
+                            <a href="https://www.instagram.com/i_am_kiishi" class="tooltip"><i
+                                    class="fa-brands fa-instagram text-[#ff004f] hover:text-black"></i>
+                                <span class="tooltiptext">Instagram</span>
+                            </a>
                         </div>
                         <div
                             class=" bg-[black] hover:bg-[white] h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
-                            <a href="https://www.twitter.com/i_am_kiishi"><i
-                                    class="fa-brands fa-twitter  text-[#ff004f] hover:text-black"></i></a>
+                            <a href="https://www.twitter.com/i_am_kiishi" class="tooltip"><i
+                                    class="fa-brands fa-twitter  text-[#ff004f] hover:text-black"></i>
+                                <span class="tooltiptext">Twitter</span>
+                            </a>
                         </div>
                         <div
                             class=" bg-[black] hover:bg-[white] h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
-                            <a href=""><i class="fa-brands fa-telegram  text-[#ff004f] hover:text-black"></i></a>
+                            <a href="" target="_blank" class="tooltip"><i
+                                    class="fa-brands fa-telegram  text-[#ff004f] hover:text-black"></i>
+                                <span class="tooltiptext">Telegram</span>
+                            </a>
                         </div>
                         <div
                             class=" bg-[black] hover:bg-[white] h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
-                            <a href="https://www.github.com/blessingmichaels"> <i
-                                    class="fa-brands fa-github text-[#ff004f] hover:text-black"></i></a>
+                            <a href="https://www.github.com/blessingmichaels" target="_blank" class="tooltip"> <i
+                                    class="fa-brands fa-github text-[#ff004f] hover:text-black"></i>
+                                <span class="tooltiptext">Github</span>
+                            </a>
                         </div>
                         <div
                             class=" bg-[black] hover:bg-[white] h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
-                            <a href="https://www.facebook.com/Blessing Michaels"> <i
-                                    class="fa-brands fa-facebook text-[#ff004f] hover:text-black"></i></a>
+                            <a href="https://www.facebook.com/Blessing Michaels" target="_blank" class="tooltip"> <i
+                                    class="fa-brands fa-facebook text-[#ff004f] hover:text-black"></i>
+                                <span class="tooltiptext">Facebook</span>
+                            </a>
+                        </div>
+                        <div
+                            class=" bg-[black] hover:bg-[white] h-[2rem] w-[2rem] rounded-[50%] flex justify-center items-center">
+                            <a href="https://www.linkedin.com/in/BLESSING-OGUNYEMI-aa2851249 " target="_blank"
+                                class="tooltip"> <i class="fa-brands fa-linkedin text-[#ff004f] hover:text-black"></i>
+                                <span class="tooltiptext">Linkedin</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="footer-two px-[7%] pt-[5%] pb-[2%] mt-[10%] text-center">
+            <p class="text-[18px]">Made with <i class="fas fa-heart text-[#ff004f]"></i> by Blessing</p>
         </div>
     </section>
 
