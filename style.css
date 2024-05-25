@@ -200,10 +200,10 @@ nav ul li a:hover::after {
 
 @media only screen and (max-width:600px) {
 
-    /* body {
-    background-color: #ccc;
-    color: black !important;
-   } */
+    nav ul li a::after {
+       
+        background: #ccc;
+    }
     .hero-image {
         display: none;
     }
@@ -213,22 +213,14 @@ nav ul li a:hover::after {
         margin-top: 5rem;
     }
 
+   
+
     nav .fas {
         display: block;
         font-size: 25px;
     }
 
-    /* nav ul {
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    } */
+
 
     nav ul li {
         display: block;
@@ -286,6 +278,10 @@ nav ul li a:hover::after {
         display: block;
     }
 
+    .ul-right  {
+        right: -200px;
+    }
+    
 }
 
 @media (min-width:601px) and (max-width:700px) {
@@ -336,4 +332,3 @@ nav ul li a:hover::after {
 }
 
 
-}

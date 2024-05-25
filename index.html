@@ -14,27 +14,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        #typewriter {
-            border-right: 1px solid #000;
-            white-space: nowrap;
-            overflow: hidden;
-            animation: typing 3s steps(30, end);
-        }
-
-        @keyframes typing {
-            from {
-                width: 0
-            }
-        }
-    </style>
 </head>
 
 <body>
     <header id="header">
-        <nav
-            class="px-[5%] py-[10px] border border-gray-900 rounded-lg mx-[5%] my-[3%] flex items-center flex-wrap justify-between text-[18px]">
-            <div class="logo">
+        <nav class="lg:px-[5%] lg:py-[10px] lg:border  border-gray-900 rounded-lg lg:mx-[5%] lg:my-[3%] flex items-center flex-wrap justify-between
+             lg:text-[18px] max-sm:my-[0rem] max-sm:mr-[4rem] max-sm:p-[0rem]">
+            <div class="logo max-sm:px-[2rem] max-sm:pt-[2rem]">
                 <a href="#Home">
                     <h1 class="lg:text-[2rem] max-sm:text-[1rem] cursor-pointer"><i
                             class="fa-solid fa-chevron-left  text-[#ff004f]"></i><span
@@ -42,19 +28,23 @@
                             class="fa-solid fa-chevron-right text-[#ff004f]"></i></h1>
                 </a>
             </div>
-            <div
-                class="relative ">
-                <ul class="flex flex-wrap md:flex-row gap-[2rem] z-10 relative max-sm:flex-col max-sm:flex-col">
-                    <li><a href="#" class="duration-500 relative" id="Home">Home</a></li>
+            <div class="relative">
+                <ul class="ul-right flex flex-wrap md:flex-row lg:gap-[2rem] z-10 lg:relative max-sm:flex-col max-sm:flex-col max-sm:bg-[#ff004f] 
+                    max-sm:h-[100vh]  max-sm:w-[200px] max-sm:fixed max-sm:top-0 max-sm:right-[calc(-100vw + 200px)]  max-sm:z-2 max-sm:pt-[50px] 
+                    max-sm:gap-0" id="sidemenu">
+                    <li class="max-sm:m-[25px] "><a href="#" class="duration-500 relative" id="Home">Home</a></li>
                     <li><a href="#About" class="duration-500 relative">About</a></li>
                     <li><a href="#Skills" class="duration-500 relative">Skills</a></li>
                     <li><a href="#Services" class="duration-500 relative">Services</a></li>
                     <li><a href="#Experience" class="duration-500 relative">Experience</a></li>
-                    <i class="fas fa-times lg:hidden text-[25px]" onclick="closemenu()"></i>
+                    <li class="lg:hidden"><a href="#Contact" class="duration-500 relative">Contact Me</a></li>
+                    <i class="fas fa-times lg:hidden text-[25px] max-sm:absolute  max-sm:top-[25px]  max-sm:left-[25px]"
+                        onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars lg:hidden text-[25px]" onclick="openmenu()"></i>
+                <i class="fas fa-bars lg:hidden text-[25px]  max-sm:absolute "
+                    onclick="openmenu()"></i>
             </div>
-            <button class="bg-[#ff004f] py-[12px] px-[50px] rounded-[16px] block w-[fit-content]  z-10 relative"><a
+            <button class="bg-[#ff004f] py-[12px] px-[50px] rounded-[16px] w-[fit-content]  z-10 relative max-sm:hidden lg:visible"><a
                     href="#Contact">Contact Me</a></button>
         </nav>
     </header>
@@ -572,26 +562,16 @@
     </script>
 
 
-    <!-- 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
-        integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
     <script>
-        const text = "Welcome to the typewriter effect.";
-        let index = 0;
+        var sidemenu = document.getElementById("sidemenu");
 
-        function typeWriter() {
-            if (index < text.length) {
-                document.getElementById("typewriter").innerHTML += text.charAt(index);
-                index++;
-                setTimeout(typeWriter, 100); // Adjust the speed here
-            }
+        function openmenu() {
+            sidemenu.style.right = "0";
         }
-
-        typeWriter();
-    </script> -->
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
