@@ -300,6 +300,11 @@ nav ul li a:hover::after {
 
 @media (min-width:768px) and (max-width:900px) {
 
+    nav ul li a::after {
+       
+        background: #ccc;
+    }
+    
     .about-col-1,
     .about-col-2 {
         flex-direction: column;
