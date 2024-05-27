@@ -18,9 +18,10 @@
 
 <body>
     <header id="header">
-        <nav class="lg:px-[5%] lg:py-[10px] lg:border  border-gray-900 rounded-lg lg:mx-[5%] lg:my-[3%] flex items-center flex-wrap justify-between
-             lg:text-[18px] max-sm:my-[0rem] max-sm:mr-[4rem] max-sm:p-[0rem] md:my-[0rem] md:mr-[4rem] md:p-[0rem]">
-            <div class="logo max-sm:px-[2rem] max-sm:pt-[2rem] md:px-[4rem] md:pt-[3rem]">
+        <nav class=" lg:border lg:border-gray-900 rounded-lg lg:px-[5%] lg:py-[10px] lg:mx-[5%] lg:my-[3%]
+         flex items-center flex-wrap justify-between lg:h-auto 
+             lg:text-[18px] max-sm:my-[0rem] max-sm:mr-[4rem] max-sm:p-[0rem] md:my-[0rem] md:mr-[4rem]">
+            <div class="logo max-sm:px-[2rem] max-sm:pt-[2rem] md:px-[4rem] md:pt-[3rem] lg:px-[0rem] lg:pt-[0rem]">
                 <a href="#Home">
                     <h1 class="lg:text-[2rem] max-sm:text-[1rem] md:text-[2rem] cursor-pointer"><i
                             class="fa-solid fa-chevron-left  text-[#ff004f]"></i><span
@@ -29,17 +30,25 @@
                 </a>
             </div>
             <div class="relative">
-                <ul class="ul-right flex flex-wrap md:flex-row lg:gap-[2rem] z-10 lg:relative max-sm:flex-col max-sm:flex-col max-sm:bg-[#ff004f] 
+                <ul class="ul-right lg:flex lg:flex-wrap lg:flex lg:gap-[2rem] z-10 lg:relative max-sm:flex-col max-sm:flex-col max-sm:bg-[#ff004f] 
                     max-sm:h-[100vh]  max-sm:w-[200px] max-sm:fixed max-sm:top-0 max-sm:right-[calc(-100vw + 200px)]  max-sm:z-2 max-sm:pt-[50px] 
-                    max-sm:gap-0  md:flex-col md:bg-[#ff004f] md:h-[100vh] md:w-[200px] md:fixed md:top-0 md:right-[calc(-100vw + 200px)] 
-                    md:z-2 md:pt-[50px] md:gap-0" id="sidemenu">
-                    <li class="max-sm:m-[25px] md:m-[25px]"><a href="#" class="duration-500 relative" id="Home">Home</a>
+                    max-sm:gap-0  md:flex-col md:bg-[#ff004f]  lg:bg-[#080808] lg:h-0 lg:items-center md:h-[100vh] md:w-[200px] md:fixed 
+                    md:top-0 md:right-[calc(-100vw + 200px)] md:z-2 md:pt-[50px] md:gap-0  lg:pt-[0px] lg:top-[-12px] lg:right-[150px] lg:fixed "
+                    id="sidemenu">
+                    <li class="max-sm:m-[25px] md:m-[25px] lg:m-0"><a href="#"
+                            class="duration-500 relative md:text-[20px]" id="Home">Home</a>
                     </li>
-                    <li class="md:m-[25px]"><a href="#About" class="duration-500 relative md:text-[20px]">About</a></li>
-                    <li class="md:m-[25px]"><a href="#Skills" class="duration-500 relative md:text-[20px]">Skills</a></li>
-                    <li class="md:m-[25px]"><a href="#Services" class="duration-500 relative md:text-[20px]">Services</a></li>
-                    <li class="md:m-[25px]"><a href="#Experience" class="duration-500 relative md:text-[20px]">Experience</a></li>
-                    <li class="lg:hidden md:m-[25px]"><a href="#Contact" class="duration-500 relative md:text-[20px]">Contact Me</a>
+                    <li class="md:m-[25px] lg:m-0"><a href="#About"
+                            class="duration-500 relative md:text-[20px]">About</a></li>
+                    <li class="md:m-[25px] lg:m-0"><a href="#Skills"
+                            class="duration-500 relative md:text-[20px]">Skills</a>
+                    </li>
+                    <li class="md:m-[25px] lg:m-0"><a href="#Services"
+                            class="duration-500 relative md:text-[20px]">Services</a></li>
+                    <li class="md:m-[25px] lg:m-0"><a href="#Experience"
+                            class="duration-500 relative md:text-[20px]">Experience</a></li>
+                    <li class="contact-hide lg:hidden md:m-[25px] lg:m-0"><a href="#Contact"
+                            class="duration-500 relative md:text-[20px]">Contact Me</a>
                     </li>
                     <i class="fas fa-times lg:hidden max-sm:text-[25px] max-sm:absolute  md:absolute  max-sm:top-[25px]  md:top-[25px] 
                     max-sm:left-[25px] md:left-[25px] md:text-[30px] " onclick="closemenu()"></i>
@@ -48,7 +57,7 @@
                     onclick="openmenu()"></i>
             </div>
             <button
-                class="bg-[#ff004f] py-[12px] px-[50px] rounded-[16px] w-[fit-content]  z-10 relative max-sm:hidden md:hidden lg:visible"><a
+                class=" bg-[#ff004f] py-[12px] px-[50px] rounded-[16px] w-[fit-content]  z-10 relative hidden lg:block"><a
                     href="#Contact">Contact Me</a></button>
         </nav>
     </header>
@@ -537,7 +546,8 @@
             </div>
         </div>
         <div class="footer-two px-[7%] pt-[5%] pb-[2%] mt-[10%] text-center">
-            <p class="text-[18px]">Made with <a href="#header"><i class="fas fa-heart text-[#ff004f]"></i></a> by Blessing</p>
+            <p class="text-[18px]">Made with <a href="#header"><i class="fas fa-heart text-[#ff004f]"></i></a> by
+                Blessing</p>
         </div>
     </section>
 

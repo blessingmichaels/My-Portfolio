@@ -1,3 +1,8 @@
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +21,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 
 nav ul li a::after {
     content: '';
@@ -190,9 +196,9 @@ nav ul li a:hover::after {
     display: none;
 }
 
-.logoipsum {
+/* .logoipsum {
     display: none;
-}
+} */
 
 
 
@@ -335,5 +341,22 @@ nav ul li a:hover::after {
     }
 
 }
+@media (min-width:1024px) and (max-width:1100px) {
+    .footer {
+        padding: 0 2rem !important;
+    }
 
+    .ul-right {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        right: 100px !important;
+    }
+   nav ul li a {
+    font-size: 16px !important;
+    }
+    nav button {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+}
 
