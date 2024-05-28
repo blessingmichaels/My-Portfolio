@@ -69,9 +69,9 @@
             class="my-[15%] text-[20px] px-[7%] flex flex-col lg:flex-row justify-between w-full h-full md:px-[10%] items-center">
             <div class="home-div lg:pt-[5%] lg:flex-shrink-0" style="flex-basis: 60%;">
                 <div>
-                    <h1 class="h-one lg:text-[50px] max-sm:text-[25px]  md:text-[60px] font-[500] pb-[1rem]">Hi, <span
-                            class="text-[#b54769] md:hidden ">&#9995;</span> I'm<br>Ogunyemi
-                        Blessing, <span class="md:hidden">&#128521;</span></h1>
+                    <h1 class="h-one lg:text-[50px] max-sm:text-[25px]  md:text-[60px] font-[500] pb-[1rem] overflow-hidden"
+                        id="typewriter"> <span class="text-[#b54769] md:hidden ">&#9995;</span> <br>
+                        <span class="md:hidden">&#128521;</span></h1>
                     <p
                         class="auto-type lg:text-[27px] max-sm:text-[13px] max-sm:leading-loose md:text-[25px] md:leading-relax">
                         A Passionate <i class="fa-solid fa-chevron-left text-[#ff004f]"></i><span
@@ -85,7 +85,9 @@
                 </div>
             </div>
             <div class="home-img lg:flex-shrink-0 md:mt-[5rem]" style="flex-basis: 33%;">
-                <img src="img/mine.jpg" class="hero-image lg:rounded-[50%] md:rounded-[20px] md:h-auto shadow" alt="">
+                <img src="img/my-image.jpg" class="hero-image lg:rounded-[20px] md:rounded-[20px] md:h-auto shadow"
+                    alt="">
+                <!-- <img src="img/mine.jpg" class="hero-image lg:rounded-[20px] md:rounded-[20px] md:h-auto shadow" alt=""> -->
                 <img src="img/frontend.png" class="hero-image2 rounded-lg shadow" alt="">
             </div>
         </div>
@@ -462,7 +464,7 @@
                             <span class="tooltiptext">Linkedin</span>
                         </a>
                     </div>
-                    <a href="#" download
+                    <a href="img/OGUNYEMI BLESSING RESUME.docx" download
                         class="btn btn2 bg-[#ff004f] inline-block py-[14px] px-[50px] rounded-[6px] w-[fit-content] shadow mt-[30px]">Download
                         CV</a>
                 </div>
@@ -546,7 +548,8 @@
             </div>
         </div>
         <div class="footer-two px-[7%] pt-[5%] pb-[2%] mt-[10%] text-center">
-            <p class="text-[18px]">Made with <a href="#header"><i class="fas fa-heart text-[#ff004f] cursor-pointer"></i></a> by
+            <p class="text-[18px]">Made with <a href="#header"><i
+                        class="fas fa-heart text-[#ff004f] cursor-pointer"></i></a> by
                 Blessing</p>
         </div>
     </section>
@@ -586,6 +589,40 @@
             sidemenu.style.right = "-200px";
         }
     </script>
+    <h1 id="typewriter" class="text-[50px] md:text-[60px] font-[500] pb-[1rem] overflow-hidden"></h1>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const texts = ["Hi, 👋 I'm Ogunyemi Blessing, 😊"];
+        let textIndex = 0;
+        let charIndex = 0;
+        const typewriter = document.getElementById('typewriter');
+    
+        function typeWriter() {
+          if (charIndex < texts[textIndex].length) {
+            typewriter.innerHTML += texts[textIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeWriter, 200);
+          } else {
+            setTimeout(eraseText, 3000);
+          }
+        }
+    
+        function eraseText() {
+          if (charIndex > 0) {
+            typewriter.innerHTML = texts[textIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(eraseText, 50);
+          } else {
+            textIndex = (textIndex + 1) % texts.length;
+            setTimeout(typeWriter, 1000);
+          }
+        }
+    
+        typeWriter();
+      });
+    </script>
+    
 </body>
 
 </html>
