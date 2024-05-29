@@ -341,6 +341,16 @@ nav ul li a:hover::after {
     }
 
 }
+
+
+@media (min-width:970px) and (max-width:1020px) {
+    
+}
+
+
+
+
+
 @media (min-width:1024px) and (max-width:1100px) {
     .footer {
         padding: 0 2rem !important;
