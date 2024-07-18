@@ -53,8 +53,7 @@
                     <i class="fas fa-times lg:hidden max-sm:text-[25px] max-sm:absolute  md:absolute  max-sm:top-[25px]  md:top-[25px] 
                     max-sm:left-[25px] md:left-[25px] md:text-[30px] " onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars lg:hidden max-sm:text-[25px] md:text-[30px] max-sm:absolute md:absolute"
-                    onclick="openmenu()"></i>
+                <i class="fas fa-bars lg:hidden max-sm:text-[25px] md:text-[30px] max-sm:absolute md:absolute" onclick="openmenu()"></i>
             </div>
             <button
                 class=" bg-[#ff004f] py-[12px] px-[50px] rounded-[16px] w-[fit-content]  z-10 relative hidden lg:block"><a
@@ -71,7 +70,8 @@
                 <div>
                     <h1 class="h-one lg:text-[50px] max-sm:text-[25px]  md:text-[60px] font-[500] pb-[1rem] overflow-hidden"
                         id="typewriter"> <span class="text-[#b54769] hidden ">&#9995;</span> <br>
-                        <span class="hidden">&#128521;</span></h1>
+                        <span class="hidden">&#128521;</span>
+                    </h1>
                     <p
                         class="auto-type lg:text-[27px] max-sm:text-[13px] max-sm:leading-loose md:text-[25px] md:leading-relax">
                         A Passionate <i class="fa-solid fa-chevron-left text-[#ff004f]"></i><span
@@ -179,8 +179,8 @@
                 tools,
                 and technologies: </p>
             <div class=" skill-icons flex pt-[5rem] justify-between items-center justify-center"
-                style="flex-basis: 40%;">
-                <div>
+                style="flex-basis: 40%; ">
+                <div class="flex flex-col items-center">
                     <i class="fa-brands fa-js lg:text-[7rem] text-yellow-500 max-sm:text-[2rem] md:text-[5rem] "></i>
                     <p class="text-lg max-sm:text-[10px]">JavaScript</p>
                 </div>
@@ -193,11 +193,11 @@
                         class="fa-brands fa-bootstrap text-[7rem] text-purple-500 max-sm:text-[2rem] md:text-[5rem] "></i>
                     <p class="text-lg max-sm:text-[10px]">Bootstrap</p>
                 </div>
-                <div>
+                <div class="flex flex-col items-center">
                     <i class="fa-solid fa-code-merge text-[7rem] text-orange-700 max-sm:text-[2rem] md:text-[5rem]"></i>
                     <p class="text-lg max-sm:text-[10px]">GIT</p>
                 </div>
-                <div>
+                <div class="flex flex-col items-center">
                     <img src="img/tailwind-svgrepo-com.svg" class="lg:w-[8rem] h-auto max-sm:w-[2rem] md:w-[5rem]"
                         alt="">
                     <p class="text-lg max-sm:text-[10px]">Tailwindcss</p>
@@ -218,6 +218,35 @@
                 demonstrating my
                 developer skills and capabilities.</p>
             <div class="work-list">
+                <div class="work border-2 border-black shadow w-[100%] h-auto pb-5 cursor-pointer">
+                    <img src="img/Todo-App.jpeg" alt="image-one" class="h-[35vh]">
+                    <div>
+                        <h2 class="text-base leading-loose pt-3 pb-2 drop-shadow">Todo-App</h2>
+                        <p class="leading-loose text-[10px] pb-2 text-gray-400">This is an App built with
+                            React, JavaScript and Tailwind</p>
+                        <div class="flex gap-[1rem] items-center px-5 justify-center">
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">React</a></button>
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">JavaScript</a></button>
+                            <button
+                                class="cursor-pointer border-2 border-gray-900 hover:bg-[#ff004f] py-1 px-[.7rem] rounded-lg text-[8px]"><a
+                                    href="">Tailwind</a></button>
+                        </div>
+                        <div class="flex justify-center pt-3 justify-between">
+                            <a href="https://todo-app-lilac-rho-66.vercel.app/" target="_blank"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i class="fa-solid fa-link"></i>
+                                Live Preview</a>
+                            <a href="https://github.com/blessingmichaels/Todo-APP" target="_blank"
+                                class="text-[10px] px-[2rem] underline text-gray-400"><i
+                                    class="fa-brands fa-github"></i>
+                                View Code</a>
+
+                        </div>
+                    </div>
+                </div>
                 <div class="work border-2 border-black shadow w-[100%] h-auto pb-5 cursor-pointer">
                     <img src="img/urono.png" alt="image-one">
                     <div>
@@ -559,7 +588,7 @@
 
 
 
-    <script>
+     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwrzFNY8P5sLvkxWtEjVZbtE26ULe75ofQshsWTnD6qT3uWlxpncTDk_5YSyvRtEQ9V/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
@@ -592,37 +621,37 @@
     <h1 id="typewriter" class="text-[50px] md:text-[60px] font-[500] pb-[1rem] overflow-hidden"></h1>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const texts = ["Hi, 👋 I'm Ogunyemi Blessing, 😊"];
-        let textIndex = 0;
-        let charIndex = 0;
-        const typewriter = document.getElementById('typewriter');
-    
-        function typeWriter() {
-          if (charIndex < texts[textIndex].length) {
-            typewriter.innerHTML += texts[textIndex].charAt(charIndex);
-            charIndex++;
-            setTimeout(typeWriter, 200);
-          } else {
-            setTimeout(eraseText, 3000);
-          }
-        }
-    
-        function eraseText() {
-          if (charIndex > 0) {
-            typewriter.innerHTML = texts[textIndex].substring(0, charIndex - 1);
-            charIndex--;
-            setTimeout(eraseText, 50);
-          } else {
-            textIndex = (textIndex + 1) % texts.length;
-            setTimeout(typeWriter, 1000);
-          }
-        }
-    
-        typeWriter();
-      });
+        document.addEventListener("DOMContentLoaded", function () {
+            const texts = ["Hi, 👋 I'm Ogunyemi Blessing, 😊"];
+            let textIndex = 0;
+            let charIndex = 0;
+            const typewriter = document.getElementById('typewriter');
+
+            function typeWriter() {
+                if (charIndex < texts[textIndex].length) {
+                    typewriter.innerHTML += texts[textIndex].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeWriter, 200);
+                } else {
+                    setTimeout(eraseText, 3000);
+                }
+            }
+
+            function eraseText() {
+                if (charIndex > 0) {
+                    typewriter.innerHTML = texts[textIndex].substring(0, charIndex - 1);
+                    charIndex--;
+                    setTimeout(eraseText, 50);
+                } else {
+                    textIndex = (textIndex + 1) % texts.length;
+                    setTimeout(typeWriter, 1000);
+                }
+            }
+
+            typeWriter();
+        });
     </script>
-    
+
 </body>
 
 </html>
